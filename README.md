@@ -95,6 +95,5 @@ endmodule
 ![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/c3191216-a6e3-489e-bee9-38e10abba34e)
 
 **Result:**
-
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
 
