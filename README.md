@@ -70,29 +70,36 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  
  RegisterNumber: 212222230048
  ```
- module flipflops(a,b,Y1,Y2,Y3,Y4,Y5,Y6,Y7);
-input a,b;
-output Y1,Y2,Y3,Y4,Y5,Y6,Y7;
-and(Y1,a,b);
-or(Y2,a,b);
-not(Y3,a);
-xor(Y4,a,b);
-nand(Y5,a,b);
-nor(Y6,a,b);
-xnor(Y7,a,b);
+module gates_exp1(a, b, c, d, e, x, y, z);
+  input a, b;
+  output c, d, e, x, y, z;
+
+  assign c = a & b;   // AND gate
+  assign d = a | b;   // OR gate
+  assign e = a ^ b;   // XOR gate
+  assign x = ~(a & b); // NAND gate
+  assign y = ~(a | b); // NOR gate
+  assign z = ~(a ^ b); // XNOR gate
+
 endmodule
 ```
 **Logic symbol & Truthtable**
 
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/256677e1-eb81-46a2-a228-7ed7a030d514)
+![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/7d3f370e-2e48-4ee8-a334-c6cdaf2f5602)
+
+![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/97319907-a63d-46e4-9134-f16aab68ce27)
+
+
 
 **RTL realization Output:** 
 
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/24f8e936-74d2-4a3d-948c-9bd41bdcbdbd)
+![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/ea009bcd-a628-4de4-be71-11d8c993f4eb)
+
 
 **Timing diagram**
 
-![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/c3191216-a6e3-489e-bee9-38e10abba34e)
+![image](https://github.com/Hemasonica774/study-of-basic-gates/assets/118361409/4ec8fff5-fade-44fc-aad9-2ad00701f1df)
+
 
 **Result:**
 Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
